@@ -21,7 +21,7 @@ RSpec.describe "The FlightSchool application" do
   end
 
   it "shows a list of common airports" do
-    get "/"
+    get "/foo"
     expect(last_response).to be_ok
     expect(last_response.body).to include("Current status of airports")
   end
